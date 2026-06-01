@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Tweak — Secure Download</title>
+  <meta name="description" content="Download the latest Quantum Tweak build. Enter your license key to begin.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="backdrop"></div>
+  <canvas id="particles"></canvas>
+  <div class="scroll-bar"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Quantum Tweak logo"><span class="brand-text">Quantum&nbsp;Tweak</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a class="active" href="download.html">Download</a>
+        <a href="https://discord.gg/tqdyuBGJ" target="_blank" rel="noopener">Discord</a>
+      </div>
+      <a class="nav-cta" href="shop.html">Get a key — $25</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="download.html">Download</a>
+    <a href="https://discord.gg/tqdyuBGJ" target="_blank" rel="noopener">Discord</a>
+  </div>
+
+  <main class="page-wrap">
+    <div class="container">
+      <div class="dl-card fade-up">
+        <span class="tag" style="margin-bottom:6px;">Secure Download</span>
+        <h1>Quantum Tweak</h1>
+        <p class="dl-sub">Always stay on the latest, fastest build.</p>
+
+        <div class="dl-version"><span class="live-dot" style="background:var(--cyan);box-shadow:0 0 10px var(--cyan);"></span> v1.0.0 · 18.4 MB</div>
+
+        <div class="dl-field">
+          <input type="text" id="keyInput" placeholder="QT-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false">
+        </div>
+
+        <button class="btn btn-primary full btn-lg" id="dlBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="label">Verify &amp; Download</span>
+        </button>
+
+        <div class="dl-progress" id="dlProgress"><i></i></div>
+        <p class="dl-msg" id="dlMsg"></p>
+
+        <div class="dl-meta">
+          <div><span>Status:</span> <b>Up to date</b></div>
+          <div><span>Last update:</span> <b style="color:var(--cyan);">Today</b></div>
+        </div>
+
+        <p class="dl-hint">Demo key for testing: <strong style="color:var(--cyan);">QT-DEMO-2026-PASS</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0;"><p>© 2026 Quantum Tweak. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script src="assets/download.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Tweak — Checkout</title>
+  <meta name="description" content="Get a lifetime Quantum Tweak license for a one-time $25. Pay by card, PayPal or crypto. Keys delivered instantly.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="backdrop"></div>
+  <canvas id="particles"></canvas>
+  <div class="scroll-bar"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Quantum Tweak logo"><span class="brand-text">Quantum&nbsp;Tweak</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="shop.html">Shop</a>
+        <a href="download.html">Download</a>
+        <a href="https://discord.gg/tqdyuBGJ" target="_blank" rel="noopener">Discord</a>
+      </div>
+      <a class="nav-cta" href="download.html">Download</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="download.html">Download</a>
+    <a href="https://discord.gg/tqdyuBGJ" target="_blank" rel="noopener">Discord</a>
+  </div>
+
+  <main class="page-wrap">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:44px;">
+        <span class="tag fade-up">Checkout</span>
+        <h2 class="fade-up d1">Get <span class="gradient-text">Quantum&nbsp;Tweak</span></h2>
+      </div>
+
+      <div class="checkout fade-up d2">
+        <!-- Visual side -->
+        <div class="checkout-visual">
+          <img class="logo-big" src="assets/logo.svg" alt="Quantum Tweak logo">
+          <h3>Lifetime License</h3>
+          <p class="desc">Install on one PC · forever</p>
+          <ul class="checkout-feats">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg> All features included</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg> No expiry, no subscription</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg> Instant key delivery</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg> 24/7 priority support</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg> All future updates</li>
+          </ul>
+          <div class="checkout-shot"><img src="assets/app-screenshot.png" alt="Quantum Tweak app" loading="lazy"></div>
+        </div>
+
+        <!-- Form side -->
+        <div class="checkout-panel">
+          <div class="checkout-price"><span class="cur">$</span><span class="big">25</span><span class="per">one-time</span></div>
+          <div style="font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;">Payment method</div>
+          <div class="pay-methods" id="payMethods">
+            <button class="pay-method sel" data-pay="Card"><span class="ic" style="background:linear-gradient(135deg,#7fe9ff,#2f81f7);">CARD</span><span class="nm">Credit / Debit Card</span><span class="rd"></span></button>
+            <button class="pay-method" data-pay="PayPal"><span class="ic" style="background:linear-gradient(135deg,#5aa9ff,#1a5fd0);color:#fff;">PP</span><span class="nm">PayPal</span><span class="rd"></span></button>
+            <button class="pay-method" data-pay="Crypto"><span class="ic" style="background:linear-gradient(135deg,#ffb454,#ff8a3d);">BTC</span><span class="nm">Crypto (BTC / ETH / USDT)</span><span class="rd"></span></button>
+          </div>
+          <button class="btn btn-primary full btn-lg" id="buyBtn" style="margin-top:20px;">
+            <span class="label">Pay $25 with Card</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="checkout-tos">Secure checkout · By purchasing you agree to the <a href="#">Terms</a>.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0;"><p>© 2026 Quantum Tweak. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script src="assets/shop.js"></script>
+</body>
+</html>
